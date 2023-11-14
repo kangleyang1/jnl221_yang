@@ -8,9 +8,19 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         
         <style>
+
+            .alert {
+                color: rebeccapurple;
+                border: 3px solid darkred
+                font-size: 16px;
+            }
+
+            #byline
+                {color: red;
+                }
         
             h1 {
-                border: 3px solid brown;
+                border: 3px solid brown;}
 
             p {
                 color: maroon;
@@ -22,6 +32,10 @@
                 color: magenta;
                 font-style: italic;
                 border: solid lightskyblue 2px;
+            }
+
+            .book{
+                border: 6px dotted blue;
             }
 
             #bargraph {
@@ -56,61 +70,83 @@
     <body>
         <!--Messing with CSS -->
             <div class= "alert">
-                <h3>Breaking news: Tuesday feels like Thursday.</h3>
-                <p>Reporting by JNL221</p>
+                <h3>Breaking news: I need a 3-day work week badly</h3>
+                <p id= "byline">Reporting by JNL221</p>
             </div>
 
-        <h1 style="color: powderblue;">I'm Kangle.</h1>
+        <h1 class= "alert">I'm Kangle.</h1>
         
         <h2>My intro</h2>
         <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
         <!-- Tags to use: <p>, <strong>, <i> -->
+        <p>My name is <strong>Kangle</strong>, and I'm from <i>Shanghai, China.</i>
         
 
         <h2>My handles</h2>
         <!-- Include: at least two handles for your social media accounts -->
         <!-- Tags to use: <p>, <a> -->
+        <p> This is <a href="https://www.twitter.com" target="_blank"> my twitter</a> and <a href="https://www.twitter.com" target="_blank"> my instagram</a>.</p>
 
     
         <h2> ~ Challenge: Why is my text maroon? ~</h2>
         <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
-        <p>My text is maroon.</p>
+        <p>My text is gray.</p>
 
 
         <h2>My favorite meme</h2>
         <!-- Include: "large_wink.png" as an image -->
         <!-- Tags to use: <img> -->
         <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+        <img src="large_wink.png" alt="a png of a large wink" height="300px" width="400px">
 
     
         <h2>Why I'm a great student</h2>
         <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
         <!-- Tags to use: <ul>, <li>, <strong> -->
+        <ul>
+                <li><strong>Newhouse</strong></li>
+                <li>Maxwell</li>
+                <li>Whitman</li>
+                <li>Falk</li>
+            </ul>
         
     
         <h2>Top 3 most famous people from my hometown</h2>
         <!-- Include: an ordered list -->
         <!-- Tags to use: <ol>, <li>, <a> -->
+        <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Eileen_Chang" target="_blank">Eileen Chang</a></li>
+            <li>Yao Ming</li>
+            <li>Soong Mei-ling</li>
 
 
         <h2> ~ Challenge: Read my poetry ~</h2>
         <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
         <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
+        <p>This is my poem:<br>I have two essays due<br>Also I got waitlisted<br>What's up with this mess</p>
     
 
         <h2>This is one of my favorite quotes</h2>
         <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
         <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+        <h3>Garfield</h3>
+        <p id="quote">I hate Mondays.</p>
 
 
         <h2>These are more of my favorite books</h2>
         <!-- Include: an unordered list of at least three books, list items should have a border -->
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        <ul>
+            <li class="book">Song of Solomon, Toni Morrison</li>
+            <li class="book">The Great Gatsby, Scott F. Fitzgerald</li>
+            <li class="book">Frankenstein, Mary Shelley</li>
         
 
         <h2>Here's how I normally spend my weekend</h2>
         <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
         <!-- Tags to use: <iframe> -->
+            <iframe title="While life expectancies rise, gaps between different income levels continue" aria-label="Interactive line chart" id="datawrapper-chart-fz30H" src="https://datawrapper.dwcdn.net/fz30H/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
 
 
         <h3>~ Challenge: A very simple bar graph ~</h3>
